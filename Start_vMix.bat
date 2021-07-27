@@ -1,0 +1,1 @@
+& C:/Users/frank/AppData/Local/Programs/Python/Python39/python.exe c:/Users/frank/Documents/PythonCode/StartupDemo/Start_vMix.py
