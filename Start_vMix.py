@@ -2,9 +2,9 @@ import requests
 import time
 import os
 
-get_status_url = 'http://192.168.254.25:8088/api'
+get_status_url = 'http://192.168.254.25:8088/api'  // <- your vmix ip addess can be found in the settings of vmix
 recording_on = 'multiCorder>True</multiCorder>'
-lauchvMixProfile = '''start "" "C:\\Users\\frank\Documents\\vMixStorage\\user_data\\Good_Setup.vmix"'''
+lauchvMixProfile = '''start "" "C:\\your\\profile\\directory\\here\\Setup.vmix"'''
 
 launchAttempt = 0
 
@@ -56,7 +56,7 @@ while 1:
     elif recordAttempt<5:
         print("not recording attempting to record")
         #start recording!
-        requests.get('http://192.168.254.25:8088/api/?Function=StartMultiCorder')
+        requests.get('http://192.168.254.25:8088/api/?Function=StartMultiCorder')  // <- put your vmix ip address here again
         recordAttempt+=1
     else:
         print('max amount of recording attempts achieved. Halting program')
